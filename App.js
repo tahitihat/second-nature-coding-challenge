@@ -58,7 +58,8 @@ export default class App extends React.Component {
             <View style={styles.body}>
               <View style={styles.sectionContainer}>
                 <Text style={styles.textSection}>
-                  Hello, my name is: {this.state.name}
+                  Hello, my name is:{' '}
+                  <Text style={styles.highlight}>{this.state.name}</Text>
                 </Text>
               </View>
               <View style={styles.inputSection}>
@@ -79,8 +80,11 @@ export default class App extends React.Component {
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.white,
+  body: {
+    backgroundColor: Colors.blue,
+  },
+  highlight: {
+    fontWeight: 'bold',
   },
   input: {
     paddingTop: 10,
@@ -90,14 +94,14 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     marginLeft: '5%',
   },
-  body: {
-    backgroundColor: Colors.blue,
-  },
   inputSection: {
     backgroundColor: Colors.lighter,
     marginRight: '10%',
     marginLeft: '10%',
     marginBottom: 30,
+  },
+  scrollView: {
+    backgroundColor: Colors.white,
   },
   sectionContainer: {
     marginTop: 32,
@@ -105,15 +109,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     alignItems: 'center',
   },
-  textSection: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.lighter,
-  },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
     backgroundColor: Colors.purple,
+  },
+  textSection: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: Colors.lighter,
   },
 });
