@@ -19,3 +19,6 @@ Run instructions for Android:
 Due to the simple nature of interaction in the application, I chose to contain all functionality in the highest-level App component, rather than breaking it up into subcomponents (i.e. to take in user input, to display the name, etc.). For this reason, no use of props, and only the simplest possible component state were necessary.
 
 As the user types input into the text input on the app, the App component's state is automatically updated. I wanted to adhere strictly to the outline provided to me, but an alternative design here would be to add a submit button that updates the displayed text with the full word, rather than character by character.
+
+![Screenshot](screenshot.png)
+
